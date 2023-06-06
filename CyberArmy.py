@@ -12,7 +12,7 @@ time.sleep(5)
 os.system('clear')
 print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mJOIN MY SCRIPT GIFT GROUP")
 time.sleep(2)
-os.system(f'xdg-open https://facebook.com/groups/554714119911648/')
+os.system(f'xdg-open https://facebook.com/groups/412641030225365/')
 # ------------------[ Cyber Army ]-------------------#
 # ------------------[ USER-AGENT ]-------------------#
 ua = [
@@ -178,7 +178,7 @@ A2 = "[#AAAAAA]"  # Abu-Abu
 dic = {'1': 'January', '2': 'February', '3': 'March', '4': 'April', '5': 'May', '6': 'June', '7': 'July', '8': 'August',
        '9': 'September', '10': 'October', '11': 'November', '12': 'December'}
 dic2 = {'01': 'January', '02': 'February', '03': 'March', '04': 'April', '05': 'May', '06': 'June', '07': 'July',
-        '08': 'August', '09': 'September', '10': 'October', '11': 'November', '12': 'Devember'}
+        '08': 'August', '09': 'September', '10': 'October', '11': 'November', '12': 'December'}
 tgl = datetime.datetime.now().day
 bln = dic[(str(datetime.datetime.now().month))]
 thn = datetime.datetime.now().year
@@ -472,9 +472,7 @@ def dump_massal():
                         id.append(iso)
                 except:
                     continue
-       # except (KeyError, IOError):
-       #     pass
-       # except requests.exceptions.ConnectionError:
+
             print('\033[0;91m==================')
             animation(' [×] TRY AGAIN ')
             os.system('clear')
@@ -497,7 +495,7 @@ def dump_massal():
 def crack_file():
     print('\033[0;91m==================')
     os.system('espeak -a 300 " your file name"')
-    print('\033[1;32m[ Put File Example:  /sdcard/king.txt  Etc...]')
+    print('\033[1;32m[ Put File Example:  /sdcard/CyberArmy.txt  Etc...]')
     o = input('\033[97;1m[\033[92;1m+\033[97;1m] INPut FILE NAME :\033[92;1m ')
     try:
         lin = open(o).read().splitlines()
